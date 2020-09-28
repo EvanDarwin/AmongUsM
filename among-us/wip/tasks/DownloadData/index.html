@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among Us Donwload Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tablet">
+        <img src="static/ipad.png">
+        <div class="progbar fade-in" id="progshow" style="display: none;">
+            <label for="file">Downloading Data:</label>
+            <progress id="file" max="100" value="85"> 85% </progress>
+        </div>
+    </div>
+    <div class="btndiv"><button class="btn" onclick="show()">Download Data</button></div>
+
+    <script>
+        function show() {
+            let progshow = document.getElementById("progshow")
+            progshow.style.display = "block"
+        }
+    </script>
+</body>
+</html>
